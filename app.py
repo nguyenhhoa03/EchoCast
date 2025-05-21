@@ -58,6 +58,14 @@ def serve_song(filename):
     """Serve static MP3 files to clients"""
     return send_from_directory(SONG_FOLDER, filename)
 
+@socketio.on('ping_sync')
+def handle_ping():
+    emit('pong_sync', {
+        'server_time': time.time(),
+        'start_at': state['start_at']
+    })
+
+
 # --- WebSocket Handlers ---
 @socketio.on('play_song')
 def handle_play(data):
