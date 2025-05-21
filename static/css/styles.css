@@ -1,0 +1,94 @@
+/* Gradient pink-blue background and layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #a1c4fd);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Enable button */
+.enable-btn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: .5rem;
+  background: rgba(255,255,255,0.8);
+  color: #333;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Client container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.card h1, .card p {
+  margin: 0.5rem 0;
+}
+
+audio {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Admin panel */
+.panel {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  color: #fff;
+}
+.panel h2 { text-align: center; margin-top: 0; margin-bottom: 1rem; }
+.panel label { display: block; margin: 0.5rem 0 0.2rem; }
+.panel select, .panel button, .panel input[type="range"] {
+  width: 100%; margin-bottom: 1rem; padding: 0.6rem; font-size: 1rem;
+  border: none; border-radius: 0.5rem;
+}
+.panel button {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+  transition: background 0.3s;
+}
+.panel button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 600px) {
+  .card { padding: 1.5rem; }
+  .panel { margin: 1rem; padding: 1rem; }
+}

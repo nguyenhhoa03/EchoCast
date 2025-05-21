@@ -1,0 +1,44 @@
+<!-- templates/admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Control Panel</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+</head>
+<body>
+  <div class="panel">
+    <h2>Admin Dashboard</h2>
+    <label for="song">Chọn bài:</label>
+    <select id="song">
+      {% for s in songs %}
+        <option value="{{ s }}">{{ s }}</option>
+      {% endfor %}
+    </select>
+
+    <button id="btnPlay">Play</button>
+    <button id="btnPause">Stop</button>
+
+    <!-- Hiển thị link và nút copy -->
+    <div class="link-box">
+      <span>Link client: </span><span id="link">{{ client_url }}</span>
+      <button id="btnCopy">Copy</button>
+    </div>
+  </div>
+
+  <script src="/static/js/admin.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btnCopy = document.getElementById('btnCopy');
+      const url = document.getElementById('link').textContent;
+      btnCopy.addEventListener('click', () => {
+        navigator.clipboard.writeText(url).then(() => {
+          alert('Đã sao chép link!');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

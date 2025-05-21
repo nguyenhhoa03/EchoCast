@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Sync Client</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+</head>
+<body>
+  <!-- Nút enable để allow autoplay -->
+  <button id="btnEnable" class="enable-btn">Nhấn để bật đồng bộ</button>
+
+  <div class="container">
+    <div class="card">
+      <h1 id="track">Chưa có bài</h1>
+      <p>Thời gian: <span id="time">0:00</span></p>
+      <audio id="player" controls></audio>
+    </div>
+  </div>
+
+  <script src="/static/js/client.js"></script>
+</body>
+</html>
