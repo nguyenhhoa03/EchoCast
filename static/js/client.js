@@ -67,7 +67,7 @@ function pingSync() {
       const expectedTime = clientNow + serverOffset - startAt;
       const actualTime = audio.currentTime;
       const drift = Math.abs(actualTime - expectedTime);
-      if (drift > 0.2) {
+      if (drift > 0.02) {
         audio.currentTime = expectedTime;
       }
     }
