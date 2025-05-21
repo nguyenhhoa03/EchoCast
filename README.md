@@ -4,18 +4,6 @@
 
 Ứng dụng phát âm thanh đồng bộ trên nhiều thiết bị, biến các thiết bị nhỏ thành một hệ thống loa.
 
----
-
-## 📌 Mục lục
-
-1. [Tính năng](#tính-năng)
-2. [Công nghệ](#công-nghệ)
-3. [Cài đặt](#cài-đặt)
-4. [Cách sử dụng](#cách-sử-dụng)
-5. [Phát triển](#phát-triển)
-6. [Đóng góp](#đóng-góp)
-7. [Giấy phép](#giấy-phép)
-8. [Liên hệ](#liên-hệ)
 
 ---
 
