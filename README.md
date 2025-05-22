@@ -23,20 +23,21 @@ EchoCast là một ứng dụng phát nhạc đa thiết bị qua mạng LAN. Se
    ```bash
    pip install -r requirements.txt
    ```
-3. Đặt các file `.mp3` vào thư mục `static/music/` hoặc `songs/` tùy cấu trúc dự án.
+3. Đặt các file `.mp3` vào thư mục `songs/`.
 4. Chạy ứng dụng:
 
    ```bash
-   python app.py
+   python3 app.py
    ```
 5. Mở trình duyệt:
+   Chương trình sẽ tự động mở trình duyệt với trang quản lý (Admin). Tại đó bạn có thể sao chép link để gửi cho các thiết bị cùng LAN
 
    * `http://<device-ip>:5000` — Client
-   * `http://localhost:5000/admin` — Admin
+   * `http://127.0.0.1:5000/admin` — Admin
 
 
 ## License
 
 Phát hành theo giấy phép [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html).
 
-GitHub: [nguyenhhoa03/EchoCast](https://github.com/nguyenhhoa03/EchoCast)
+GitHub: [EchoCast](https://github.com/nguyenhhoa03/EchoCast)
