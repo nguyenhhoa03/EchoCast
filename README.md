@@ -18,6 +18,8 @@ EchoCast là một ứng dụng phát nhạc đa thiết bị qua mạng LAN. Se
    git clone https://github.com/nguyenhhoa03/EchoCast.git
    cd EchoCast
    ```
+
+   Hoặc tải mã nguồn dự án [Tại đây](https://github.com/nguyenhhoa03/EchoCast/archive/refs/heads/main.zip) và giải nén. Mở terminal / cmd tại vị trí đã giải nén.
 2. Cài Python và pip, sau đó cài thư viện:
 
    ```bash
