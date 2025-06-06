@@ -25,7 +25,7 @@ EchoCast là một ứng dụng phát nhạc đa thiết bị qua mạng LAN. Se
    ```bash
    pip install -r requirements.txt
    ```
-3. Đặt các file `.mp3` vào thư mục `songs/`.
+3. Đặt các file `.mp3` (không chứa kí tự đặc biệt) vào thư mục `songs`.
 4. Chạy ứng dụng:
 
    ```bash
